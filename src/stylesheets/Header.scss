@@ -1,0 +1,67 @@
+.header {
+  height: 1000px;
+  width: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(119, 255, 160, 0.8),
+      rgba(30, 108, 217, 0.8)
+    ),
+    url('https://www.wallpapertip.com/wmimgs/16-166759_vmware-wallpaper-vmware-enterprise-partner.png');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 500px, 0 100%);
+
+  .text-container {
+    padding-top: 200px;
+    text-align: center;
+
+    .search-input {
+      font-size: 20px;
+      height: 40px;
+      width: 400px;
+      border-radius: 100px;
+      transition: all 0.2s;
+      padding: 10px 20px;
+      border-color: #eee;
+      outline: none;
+    }
+
+    .search-btn {
+      display: block;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 30px;
+      margin-top: 20px;
+      border-radius: 100px;
+      border: none;
+      transition: all 0.2s;
+      position: relative;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        outline: none;
+      }
+
+      &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        outline: none;
+      }
+
+      &-white {
+        background-color: rgb(255, 219, 15);
+        color: white;
+      }
+
+      &.focus,
+      &:focus {
+        outline: 0;
+        box-shadow: none !important;
+      }
+    }
+  }
+}
